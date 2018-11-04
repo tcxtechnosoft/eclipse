@@ -35,11 +35,12 @@ public class Student
 		return age;
 	}	
 }
+
 */
+import java.util.Comparator;
+import java.util.*;
 
-
-
-public class SortNameWise implements Comparator<Student> extends Student
+public class SortNameWise implements Comparator<Student> //extends Student
 {
 	
 
@@ -51,14 +52,17 @@ public class SortNameWise implements Comparator<Student> extends Student
 
 }
 
-public class MainStudentSort  extends Student
+/*
+
+public class MainStudentSort  
 {
-	//public MainStudentSort(int studId, String studName, int age) {
+	{
+	public MainStudentSort(int studId, String studName, int age) {
 		super(studId, studName, age);
 		// TODO Auto-generated constructor stub
 	}
 
-	public static void main(String arg[])
+	public static void main(String arg[])extends Student
 	{
 		ArrayList<Student> listStudents=new ArrayList<Student>();
 		
@@ -78,3 +82,4 @@ public class MainStudentSort  extends Student
 		
 	}
 }
+	*/

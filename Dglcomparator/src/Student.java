@@ -9,6 +9,7 @@ public class Student
 	
 	public Student(int studId,String studName,int age)
 	{
+	
 		this.studId=studId;
 		this.studName=studName;
 		this.age=age;
