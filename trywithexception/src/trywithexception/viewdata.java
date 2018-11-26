@@ -1,7 +1,9 @@
 package trywithexception;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
-
-public class Sample 
+import java.io.IOException;
+import java.io.*;
+public class viewdata 
 {
   
  void get1()
@@ -18,14 +20,25 @@ public class Sample
  {
 	 System.out.println(t);
  }
+ 
  }
+ void get2() throws IOException,FileNotFoundexception;
+ {
+	 FileInputStream fis=new FileInputStream("D:\\p1.pdf");
+	 int i;
+	 while(i=fis.read()!=-1)
+{
+	System.out.print((char)i);
+	}
+ 
+}
 
 
 	public static void main(String[] args) 
 	{
 		Sample h=new Sample();
 		h.get1();
-
+        h.get2();
 	}
 
 }
