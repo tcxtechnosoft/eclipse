@@ -12,11 +12,11 @@ public class sis {
 	{
 		FileInputStream fis1=new FileInputStream("D:\\a1.txt");
 		FileInputStream fis2=new FileInputStream("D:\\a2.docx");
-	/*	byte d[]=n.getBytes();
+		byte d[]=n.getBytes();
 		fis1.write(d);
 		fis2.write(d);
 		System.out.println("the value is inserted");
-		*/
+		
 	
 	FileOutputStream fos1=new FileOutputStream("D:\\a3.pdf");
 		SequenceInputStream si=new SequenceInputStream(fis1,fis2);
@@ -27,7 +27,7 @@ public class sis {
 		
 {
 		//	fos1.write((byte)i);
-		//	System.out.println("the value is inserted");
+			System.out.println("the value is inserted");
 	System.out.print((char)i);
 }
 		}
