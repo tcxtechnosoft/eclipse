@@ -97,7 +97,7 @@ public class das extends JFrame {
 				{
 					String e1=textField.getText();
 				String p=textField_1.getText();
-				String str="select * from das where emailid='"+e1+"' OR pass='"+p+"'";
+				String str="select * from das1 where email='"+e1+"' OR password='"+p+"'";
 				Class.forName("org.h2.Driver");
 				Connection c=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","");
 				Statement st=c.createStatement();
@@ -134,5 +134,31 @@ public class das extends JFrame {
 		});
 		btnCancel_1.setBounds(357, 220, 110, 35);
 		contentPane.add(btnCancel_1);
+		
+		JButton btnNewButton = new JButton("Register");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0)
+			{
+				try
+				{
+			String email= textField.getText();
+			String password= textField_1.getText();
+			String a= "insert into das1 values('"+email+"','"+password+"')";
+			Class.forName("org.h2.Driver");
+			Connection con=DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","");
+			Statement st=con.createStatement();
+			st.executeUpdate(a);
+			JOptionPane.showMessageDialog(btnNewButton,"ramya loosu");
+			
+				}
+				catch(Exception r)
+				{
+					System.out.print(r);
+				}
+			}
+		});
+		btnNewButton.setForeground(Color.ORANGE);
+		btnNewButton.setBounds(30, 231, 89, 35);
+		contentPane.add(btnNewButton);
 	}
 }
