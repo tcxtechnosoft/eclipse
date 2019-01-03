@@ -58,6 +58,8 @@ public class das extends JFrame {
 	public das() {
 		setBounds(100, 100, 659, 382);
 		contentPane = new JPanel();
+		contentPane.setBackground(Color.PINK);
+		contentPane.setForeground(Color.GREEN);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
@@ -73,13 +75,13 @@ public class das extends JFrame {
 		contentPane.add(lblPassword);
 		
 		textField = new JTextField();
-		textField.setForeground(Color.RED);
+		textField.setForeground(Color.BLUE);
 		textField.setBounds(357, 66, 222, 22);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
-		textField_1.setForeground(Color.RED);
+		textField_1.setForeground(Color.BLUE);
 		textField_1.setBounds(357, 131, 222, 22);
 		contentPane.add(textField_1);
 		textField_1.setColumns(10);
@@ -90,6 +92,7 @@ public class das extends JFrame {
 		contentPane.add(lblBusReservationSystem);
 		
 		JButton btnConfirm = new JButton("Confirm");
+		btnConfirm.setForeground(Color.BLUE);
 		btnConfirm.addActionListener(new ActionListener() 
 		{
 			public void actionPerformed(ActionEvent arg0) {
@@ -120,7 +123,7 @@ public class das extends JFrame {
 				}
 			}
 		});
-		btnConfirm.setBounds(168, 220, 97, 35);
+		btnConfirm.setBounds(239, 220, 97, 35);
 		contentPane.add(btnConfirm);
 		
 		JButton btnCancel = new JButton("cancel");
@@ -132,7 +135,7 @@ public class das extends JFrame {
 			public void actionPerformed(ActionEvent arg0) {
 			}
 		});
-		btnCancel_1.setBounds(357, 220, 110, 35);
+		btnCancel_1.setBounds(399, 220, 110, 35);
 		contentPane.add(btnCancel_1);
 		
 		JButton btnNewButton = new JButton("Register");
@@ -157,8 +160,8 @@ public class das extends JFrame {
 				}
 			}
 		});
-		btnNewButton.setForeground(Color.ORANGE);
-		btnNewButton.setBounds(30, 231, 89, 35);
+		btnNewButton.setForeground(Color.RED);
+		btnNewButton.setBounds(118, 220, 89, 35);
 		contentPane.add(btnNewButton);
 	}
 }

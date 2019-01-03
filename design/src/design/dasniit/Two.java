@@ -18,6 +18,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.AbstractAction;
 import javax.swing.Action;
+import java.awt.Color;
 
 public class Two extends JFrame {
 
@@ -48,16 +49,20 @@ public class Two extends JFrame {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 649, 410);
 		contentPane = new JPanel();
+		contentPane.setForeground(Color.MAGENTA);
+		contentPane.setBackground(Color.LIGHT_GRAY);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel lblFrom = new JLabel("From");
+		lblFrom.setForeground(Color.DARK_GRAY);
 		lblFrom.setFont(new Font("Vani", Font.PLAIN, 23));
 		lblFrom.setBounds(59, 37, 64, 33);
 		contentPane.add(lblFrom);
 		
 		JLabel lblTo = new JLabel("To");
+		lblTo.setForeground(Color.DARK_GRAY);
 		lblTo.setFont(new Font("Vani", Font.PLAIN, 23));
 		lblTo.setBounds(59, 126, 75, 33);
 		contentPane.add(lblTo);
